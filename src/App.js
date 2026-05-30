@@ -73,6 +73,29 @@ export default function App() {
           <p className="hero-sub">
             Cleaning · End of Lease · Junk Removal · Demolition · Painting · Garden
           </p>
+          {/* Mini map in hero */}
+          <div className="hero-map-wrapper">
+            <div className="live-badge">
+              <span className="live-dot" />
+              LIVE · San Jose, CA
+            </div>
+            <iframe
+              title="San Jose CA"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101946.52978795507!2d-122.02249674609376!3d37.33233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcae48af93ff5%3A0xb99d8c0aca9f717b!2sSan%20Jose%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <div className="map-pin-overlay">
+              <div className="map-pin">
+                <span className="pin-ring" />
+                <span className="pin-ring pin-ring-2" />
+                <span className="pin-dot" />
+              </div>
+              <div className="pin-label">📍 San Jose, CA</div>
+            </div>
+          </div>
+
           <a className="btn-primary" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
             📲 Book via WhatsApp
           </a>
@@ -140,6 +163,15 @@ export default function App() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
+          {/* Pinging pin overlay centred on San Jose */}
+          <div className="map-pin-overlay">
+            <div className="map-pin">
+              <span className="pin-ring" />
+              <span className="pin-ring pin-ring-2" />
+              <span className="pin-dot" />
+            </div>
+            <div className="pin-label">📍 San Jose, CA</div>
+          </div>
         </div>
       </section>
 
