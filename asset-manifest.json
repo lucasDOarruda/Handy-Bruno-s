@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Handy-Bruno-s/static/css/main.93d3aa98.css",
-    "main.js": "/Handy-Bruno-s/static/js/main.18be980d.js",
+    "main.css": "/Handy-Bruno-s/static/css/main.2657a39d.css",
+    "main.js": "/Handy-Bruno-s/static/js/main.f27ecd29.js",
     "static/js/453.9b598a09.chunk.js": "/Handy-Bruno-s/static/js/453.9b598a09.chunk.js",
     "index.html": "/Handy-Bruno-s/index.html",
-    "main.93d3aa98.css.map": "/Handy-Bruno-s/static/css/main.93d3aa98.css.map",
-    "main.18be980d.js.map": "/Handy-Bruno-s/static/js/main.18be980d.js.map",
+    "main.2657a39d.css.map": "/Handy-Bruno-s/static/css/main.2657a39d.css.map",
+    "main.f27ecd29.js.map": "/Handy-Bruno-s/static/js/main.f27ecd29.js.map",
     "453.9b598a09.chunk.js.map": "/Handy-Bruno-s/static/js/453.9b598a09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93d3aa98.css",
-    "static/js/main.18be980d.js"
+    "static/css/main.2657a39d.css",
+    "static/js/main.f27ecd29.js"
   ]
 }
