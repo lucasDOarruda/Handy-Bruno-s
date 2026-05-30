@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -19,10 +21,30 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
   color: #e2e8f0;
   background: var(--dark);
   line-height: 1.6;
+}
+
+/* ── Section Label pill ── */
+.section-label {
+  display: inline-block;
+  background: rgba(59,130,246,.15);
+  color: var(--brand-light);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .3rem .9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(59,130,246,.25);
+  margin-bottom: .9rem;
+}
+.section-label.light {
+  background: rgba(255,255,255,.1);
+  color: #bfdbfe;
+  border-color: rgba(255,255,255,.15);
 }
 
 /* ── NAV ── */
@@ -56,7 +78,18 @@ body {
   color: #fff;
 }
 
-.logo-icon { font-size: 1.5rem; }
+.logo-svg {
+  width: 32px;
+  height: 32px;
+  background: var(--brand);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+.logo-svg svg { width: 18px; height: 18px; }
 .logo-accent { color: var(--brand-light); }
 
 .nav-links {
@@ -131,6 +164,22 @@ body {
   max-width: 680px;
 }
 
+/* Hero location tag */
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  background: rgba(15,23,42,.6);
+  border: 1px solid rgba(59,130,246,.35);
+  color: #93c5fd;
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .35rem .9rem;
+  border-radius: 999px;
+  margin-bottom: 1.2rem;
+  backdrop-filter: blur(6px);
+}
+
 .hero-content h1 {
   font-size: clamp(2.4rem, 6vw, 4rem);
   font-weight: 900;
@@ -193,8 +242,9 @@ body {
   bottom: 2rem;
   right: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: .5rem;
   background: #0f172a;
   border: 1px solid rgba(59,130,246,.4);
   color: #fff;
@@ -250,9 +300,22 @@ body {
   border-color: rgba(59,130,246,.5);
 }
 
-.card-icon { font-size: 2.4rem; margin-bottom: .75rem; }
-.card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: .5rem; color: #fff; }
-.card p { color: var(--mid); font-size: .95rem; }
+.card-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(59,130,246,.12);
+  border: 1px solid rgba(59,130,246,.25);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--brand-light);
+}
+
+.card-icon svg { width: 26px; height: 26px; }
+.card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .45rem; color: #fff; }
+.card p { color: var(--mid); font-size: .9rem; line-height: 1.6; }
 
 /* ── ABOUT ── */
 .about {
@@ -279,9 +342,28 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: .6rem;
+  gap: .7rem;
   font-weight: 500;
   color: #e2e8f0;
+  font-size: .95rem;
+}
+
+.check-list li {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.check-icon {
+  width: 28px;
+  height: 28px;
+  background: rgba(59,130,246,.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-light);
+  flex-shrink: 0;
 }
 
 .about-stats {
