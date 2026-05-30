@@ -113,7 +113,7 @@ export default function App() {
             <span /><span /><span />
           </button>
           <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-            {['Services','Location','Contact'].map(l => (
+            {['Services'].map(l => (
               <li key={l}><a href={`#${l.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{l}</a></li>
             ))}
             <li><a className="nav-cta" href={WHATSAPP_URL} target="_blank" rel="noreferrer">Get a Quote</a></li>
@@ -182,43 +182,7 @@ export default function App() {
       </section>
 
 
-      {/* MAP */}
-      <section className="map-section" id="location">
-        <div className="section-label">Service Area</div>
-        <h2>Based in San Jose, CA</h2>
-        <p className="section-sub">Covering the entire Bay Area — we come to you.</p>
-        <div className="map-wrapper">
-          <div className="live-badge">
-            <span className="live-dot" />
-            LIVE · San Jose, CA
-          </div>
-          <iframe
-            title="Handy Bruno's Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101946.52978795507!2d-122.02249674609376!3d37.33233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcae48af93ff5%3A0xb99d8c0aca9f717b!2sSan%20Jose%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-          <div className="map-pin-overlay">
-            <div className="map-pin">
-              <span className="pin-ring" />
-              <span className="pin-ring pin-ring-2" />
-              <span className="pin-dot" />
-            </div>
-            <div className="pin-label"><IconMapPin /> San Jose, CA</div>
-          </div>
-        </div>
-      </section>
 
-      {/* CONTACT */}
-      <section className="contact" id="contact">
-        <h2>Ready to Get Started?</h2>
-        <p>Message us on WhatsApp — we reply within minutes.</p>
-        <a className="btn-whatsapp" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
-          <IconWA />
-          Chat with us on WhatsApp
-        </a>
-      </section>
 
       {/* FOOTER */}
       <footer className="footer">
