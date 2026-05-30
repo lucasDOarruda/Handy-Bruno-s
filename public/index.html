@@ -4,40 +4,83 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="theme-color" content="#0a0f1e" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- ── Primary SEO ── -->
+    <title>Handy Bruno's | House Cleaning, Junk Removal & Demolition — San Jose, CA</title>
+    <meta name="description" content="Handy Bruno's offers professional house cleaning, end-of-lease cleaning, garbage & junk removal, demolition, painting and garden services in San Jose, California. Serving the entire Bay Area. Call or WhatsApp for a free quote!" />
+    <meta name="keywords" content="house cleaning San Jose, end of lease cleaning California, junk removal San Jose CA, garbage removal Bay Area, demolition services San Jose, painting services California, garden services San Jose, handyman San Jose, cleaning services USA, Handy Bruno's, property services California" />
+    <meta name="author" content="Handy Bruno's" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lucasDOarruda.github.io/Handy-Bruno-s/" />
+
+    <!-- ── Open Graph (Facebook / WhatsApp preview) ── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lucasDOarruda.github.io/Handy-Bruno-s/" />
+    <meta property="og:title" content="Handy Bruno's | Cleaning, Junk Removal & Demolition — San Jose, CA" />
+    <meta property="og:description" content="Professional house cleaning, end-of-lease, garbage removal, demolition, painting & garden services in San Jose, California. Free quotes via WhatsApp!" />
+    <meta property="og:image" content="https://lucasDOarruda.github.io/Handy-Bruno-s/logo512.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Handy Bruno's" />
+
+    <!-- ── Twitter Card ── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Handy Bruno's | Cleaning & Demolition San Jose CA" />
+    <meta name="twitter:description" content="House cleaning, junk removal, demolition, painting & garden services in San Jose, California. WhatsApp for a free quote!" />
+    <meta name="twitter:image" content="https://lucasDOarruda.github.io/Handy-Bruno-s/logo512.png" />
+
+    <!-- ── Local Business Schema (Google Rich Results) ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Handy Bruno's",
+      "description": "Professional house cleaning, end-of-lease cleaning, garbage & junk removal, demolition, painting and garden services in San Jose, California.",
+      "url": "https://lucasDOarruda.github.io/Handy-Bruno-s/",
+      "telephone": "+14085998831",
+      "priceRange": "$$",
+      "image": "https://lucasDOarruda.github.io/Handy-Bruno-s/logo512.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Jose",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.3382,
+        "longitude": -121.8863
+      },
+      "areaServed": [
+        "San Jose", "Santa Clara", "Sunnyvale", "Mountain View",
+        "Fremont", "Oakland", "San Francisco", "Bay Area", "California"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Property Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "House Cleaning" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "End of Lease Cleaning" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garbage & Junk Removal" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Demolition Services" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting Services" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garden Services" } }
+        ]
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "07:00",
+        "closes": "20:00"
+      }
+    }
+    </script>
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
