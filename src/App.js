@@ -185,7 +185,6 @@ export default function App() {
       <section className="about" id="about">
         <div className="about-inner">
           <div className="about-text">
-            <div className="section-label">Who We Are</div>
             <h2>About <span className="accent">Handy Bruno's</span></h2>
             <p>
               Handy Bruno's is a family-owned property services company built on trust, hard work,
@@ -242,7 +241,6 @@ export default function App() {
 
       {/* CONTACT */}
       <section className="contact" id="contact">
-        <div className="section-label light">Get In Touch</div>
         <h2>Ready to Get Started?</h2>
         <p>Message us on WhatsApp — we reply within minutes.</p>
         <a className="btn-whatsapp" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
