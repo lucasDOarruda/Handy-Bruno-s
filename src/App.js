@@ -113,7 +113,7 @@ export default function App() {
             <span /><span /><span />
           </button>
           <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-            {['Services','About','Location','Contact'].map(l => (
+            {['Services','Location','Contact'].map(l => (
               <li key={l}><a href={`#${l.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{l}</a></li>
             ))}
             <li><a className="nav-cta" href={WHATSAPP_URL} target="_blank" rel="noreferrer">Get a Quote</a></li>
@@ -181,35 +181,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section className="about" id="about">
-        <div className="about-inner">
-          <div className="about-text">
-            <h2>About <span className="accent">Handy Bruno's</span></h2>
-            <p>
-              Handy Bruno's is a family-owned property services company built on trust, hard work,
-              and attention to detail. Moving out, renovating, or just need a fresh start —
-              our team shows up on time and gets the job done right.
-            </p>
-            <ul className="check-list">
-              {checks.map(c => (
-                <li key={c}>
-                  <span className="check-icon"><IconShield /></span>
-                  {c}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="about-stats">
-            {[['500+','Jobs Done'],['7','Days a Week'],['100%','Satisfaction'],['Free','Quotes']].map(([n,l]) => (
-              <div className="stat" key={l}>
-                <span className="stat-num">{n}</span>
-                <span>{l}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* MAP */}
       <section className="map-section" id="location">
